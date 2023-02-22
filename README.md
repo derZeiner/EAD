@@ -6,10 +6,10 @@
 - [x] Create your engine
 - [x] name your engine (Acorn)
 - [x] engine should be a dll
-- [] write an entry point for your game
-- [] Create a game for testing – engine and game should be seperated
-- [] name your game
-- [] call your game engine
+- [x] write an entry point for your game
+- [x] Create a game for testing – engine and game should be seperated
+- [x] name your game (Sandbox)
+- [x] call your game engine
 ### Questions
 1. What is the difference between git and github?
     - Git is a version control system that allows you to track changes in your code and collaborate with others. It is a command-line tool that can be used locally on your machine or hosted on a remote server. Git allows you to create branches, merge changes, and revert to previous versions of your code.
