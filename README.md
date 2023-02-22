@@ -1,13 +1,13 @@
 # EAD
 
-## Exercise 1 – Game Engine
+## Exercise 1 – Game Engine "Acorn"
 ### Implement your Game Engine Setup
 - [x] Create a public github repository
-- [] Create your engine
-- [] name your engine
-- [] engine should be a dll
+- [x] Create your engine
+- [x] name your engine (Acorn)
+- [x] engine should be a dll
 - [] write an entry point for your game
-- [] Create a game for testing – engi2e and game should be seperated
+- [] Create a game for testing – engine and game should be seperated
 - [] name your game
 - [] call your game engine
 ### Questions
