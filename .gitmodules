@@ -1,0 +1,3 @@
+[submodule "Acorn/Acorn/vendor/spdlog"]
+	path = Acorn/Acorn/vendor/spdlog
+	url = https://github.com/gabime/spdlog

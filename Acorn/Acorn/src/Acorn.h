@@ -4,6 +4,7 @@
 
 
 #include "Acorn/Application.h"
+#include "Acorn/Log.h"
 
 // ---Entry Point------------------
 #include "Acorn/EntryPoint.h"

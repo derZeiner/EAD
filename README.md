@@ -32,3 +32,28 @@
    - File locking: Some version control systems support file locking, which can prevent multiple developers from editing the same file simultaneously. However, this can also cause bottlenecks and delays in development, especially when many files are locked at once.
    - Dependencies: Game engines often rely on external dependencies, such as plugins or third-party libraries, which can introduce versioning conflicts and make it difficult to manage the project's dependencies in a version control system.
   
+## Exercise 2 – Game Engine "Acorn"
+### Implement a Logging System
+- [] Implement a logging system or use an existing library with an abstraction layer in between
+(facade pattern, adapter pattern, ...)
+- [] provide a build system for your project
+- [] push your results on github
+### Questions
+1. Describe a logging system with your own words:
+   - is for logging events, and see if and what happens, recording system informations, shaders compiling, files opening, etc.
+   - These events can include user interactions, errors, performance metrics, security-related events, and more.
+   - Logging systems are typically designed to capture relevant data in a structured format, which can then be analyzed and used to troubleshoot issues, monitor system health, and gain insights into system usage patterns.
+2. What is the difference between git submodules and git subtrees?
+   - Git submodules: allow you to include a separate Git repository within your own repository as a subdirectory. When you clone your repository, the submodule repository is not included by default, but you can initialize and update it with separate Git commands. Changes made in the submodule repository can be tracked and committed separately from the main repository.
+   - Git subtrees: allow you to merge an entire external repository into a subdirectory of your own repository. The history of the external repository is preserved in your repository's history, and changes made to the subtree are committed in your repository as normal.
+   - The key difference between the two is that submodules allow you to maintain a separate history for the external repository, while subtrees merge the history of the external repository into your own repository's history
+3. What is a build system in C++? Name 3 build systems:
+   - A build system in C++ is a tool or set of tools that automate the process of compiling, linking, and packaging source code into a binary executable or library. Build systems typically provide a way to manage dependencies, optimize build times, and handle cross-platform issues.
+   1. CMake: CMake is a popular cross-platform build system that generates native build files for a wide range of platforms, including Linux, macOS, Windows, and more. It supports a variety of compilers and toolchains, and is highly customizable through a scripting language called CMakeLists.txt.
+   2. Make: Make is a classic build system that has been used in C++ development for decades. It uses a Makefile to specify build targets and dependencies, and automatically rebuilds only the parts of the project that have changed since the last build.
+   3. Premake: Premake is a cross-platform build configuration tool that allows developers to define their build process in a single script, which can then generate project files for a variety of build systems, including Make, Visual Studio, Xcode, and more. Premake uses a simple and readable Lua scripting language to define project settings, dependencies, and build options, making it easy to automate complex build workflows.
+4. What is a package manager in C++? Name 3 package managers:
+   - A package manager in C++ is a tool that automates the process of installing, upgrading, and managing external libraries and dependencies that a C++ project may require. Package managers typically provide a central repository of pre-built libraries that can be easily downloaded and integrated into a project, along with tools for managing dependencies and resolving conflicts.
+   1. Conan: Conan is an open-source package manager for C++ that supports multiple platforms and package types, including header-only libraries, binary packages, and source packages. It integrates with popular build systems like CMake and Bazel, and allows developers to easily share and distribute their own packages.
+   2. vcpkg: vcpkg is a cross-platform package manager developed by Microsoft that provides pre-built binary packages for a wide range of C++ libraries and tools. It can be used with a variety of build systems, including Visual Studio, CMake, and Make, and is designed to be easy to use and integrate into existing projects.
+   3. Hunter: Hunter is a CMake-based package manager that allows developers to manage their project's dependencies directly from their CMakeLists.txt file. It provides pre-built binary packages for a wide range of C++ libraries and tools, and can automatically download and configure packages as needed during the build process. Hunter also includes support for platform-specific dependencies and allows developers to customize the build process for each package.
