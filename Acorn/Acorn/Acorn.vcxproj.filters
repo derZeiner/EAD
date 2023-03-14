@@ -34,6 +34,7 @@
     <ClInclude Include="src\Acorn\Log.h">
       <Filter>Acorn</Filter>
     </ClInclude>
+    <ClInclude Include="src\acpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Acorn\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Acorn\Log.cpp">
       <Filter>Acorn</Filter>
     </ClCompile>
+    <ClCompile Include="src\acpch.cpp" />
   </ItemGroup>
 </Project>

@@ -70,6 +70,9 @@ project "Acorn"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+		pchheader "acpch.h"
+		pchsource "Acorn/src/acpch.cpp"
+
 	files 
 	{
 		"%{prj.name}/src/**.h",
