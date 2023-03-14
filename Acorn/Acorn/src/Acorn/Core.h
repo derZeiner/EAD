@@ -1,5 +1,6 @@
 #pragma once
 
+
 #ifdef AC_PLATFORM_WINDOWS
 	#ifdef AC_BUILD_DLL
 		#define ACORN_API __declspec(dllexport)
