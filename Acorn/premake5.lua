@@ -112,5 +112,3 @@ project "Acorn"
 	filter "configurations:Dist"
 		defines "AC_DIST"
 		optimize "On"
-
-
