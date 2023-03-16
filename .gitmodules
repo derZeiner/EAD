@@ -1,3 +1,6 @@
 [submodule "Acorn/Acorn/vendor/spdlog"]
 	path = Acorn/Acorn/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Acorn/Acorn/vendor/GLFW"]
+	path = Acorn/Acorn/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

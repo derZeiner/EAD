@@ -84,3 +84,33 @@
 4. Name and describe 2 Design Patterns (except façade or adapter):
    - **Singleton Pattern** - This is a creational design pattern that ensures a **class has only one instance** and provides a global point of access to that instance.
    - **Observer Pattern** - This is a behavioral design pattern that defines a **one-to-many dependency between objects**, so that when one object changes state, all its dependents are notified and updated automatically.
+
+## Exercise 3 - Game Engine "Acorn"
+### Implement an Event System
+- [x] implement a Window system or use an existing library with an abstraction layer in between
+- [x] push your results on github
+### Questions
+1. What is a precompiled header? Name pros and cons:
+   
+   A precompiled header is a **feature in some programming languages**, such as C and C++, that allows the **compiler to process a portion of source code once and save the intermediate result as a binary file**. This binary file can then be included in multiple source files, reducing the need to repeatedly compile the same header files and speeding up the overall compilation process.
+
+   - Pros:
+      - **Faster compilation times**: Precompiled headers can significantly reduce compilation times, especially for large projects with many header files.
+      - **Improved consistency:** Using a precompiled header ensures that all source files include the same set of header files, reducing the chance of inconsistencies.
+
+   - Cons:
+      - **Maintenance overhead:** Managing precompiled headers can add complexity to a project, as developers need to ensure the precompiled header is kept up-to-date and compatible with the source files.
+      - **Limited portability:** Precompiled headers may not be portable across different compilers or platforms, which can lead to difficulties when sharing code or working in diverse environments.
+
+2. Describe the layer of abstraction with your own words:
+   
+   The layer of abstraction refers to the **concept of simplifying complex systems by breaking them down into smaller**, more manageable components. In software design, a layer of abstraction **hides the intricate details of lower-level functionality** and **exposes only the essential operations or interfaces to the user**. By doing this, developers can work with high-level concepts without needing to understand every detail of the underlying system, making it easier to design, develop, and maintain software.
+3. Name the SOLID principles and describe them briefly:
+
+   The SOLID principles are a set of design guidelines for writing maintainable and scalable object-oriented software. They consist of:
+
+   - S**ingle Responsibility Principle (SRP)**: A class should have only one reason to change, **meaning it should have only one responsibility**. This helps to minimize the impact of changes and makes it easier to maintain and understand the code.
+   - **Open/Closed Principle (OCP)**: Software entities (classes, modules, functions, etc.) should be **open for extension but closed for modification**. This means that new functionality should be added by extending existing entities rather than modifying their code, promoting code reusability and reducing the risk of introducing bugs.
+   - **Liskov Substitution Principle (LSP)**: Subtypes should be substitutable for their base types without affecting the correctness of the program. In other words, **objects of a derived class should be able to replace objects of the base class without altering** the desirable properties of the program.
+   - **Interface Segregation Principle (ISP)**: Clients should not be **forced to depend on interfaces they do not use**. This principle encourages designing smaller, more focused interfaces so that classes implementing them only need to implement the methods that are relevant to their behavior.
+   - **Dependency Inversion Principle (DIP)**: High-level modules should not depend on low-level modules; both should depend on abstractions. **This principle promotes decoupling and flexibility by encouraging the use of interfaces or abstract classes to define dependencies between modules**, making it easier to swap out implementations or refactor code.

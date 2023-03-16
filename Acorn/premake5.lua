@@ -10,6 +10,12 @@ configurations
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Acorn/vendor/GLFW/include"
+
+include "Acorn/vendor/GLFW"
+
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
@@ -30,6 +36,8 @@ project "Sandbox"
 		"Acorn/src"
 
 	}
+	
+	
 
 	links
 	{
@@ -82,8 +90,17 @@ project "Acorn"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
 	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
+
+	
 
 	filter "system:windows"
 		cppdialect "C++20"
@@ -112,3 +129,5 @@ project "Acorn"
 	filter "configurations:Dist"
 		defines "AC_DIST"
 		optimize "On"
+
+	
